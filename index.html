@@ -1,18 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>JoJo Craft World</title>
-    <style>
-        body {
-            background-image: url('Background.png');
-            background-size: cover;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-        }
-    </style>
 </head>
-<body>
-    <h1>Welcome to JoJo Craft World!</h1>
-    <!-- Add more content here -->
+<body style="background-image: url('Background.png'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;">
+    <header>
+        <h1>Welcome to JoJo Craft World</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="images">
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2026 JoJo Craft World. All rights reserved.</p>
+    </footer>
 </body>
 </html>
